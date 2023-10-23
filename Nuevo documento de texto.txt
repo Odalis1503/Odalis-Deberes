@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ᴘʀᴏᴅᴜᴄᴛ ʀᴇᴠɪᴇᴡ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFC0CB; 
+        }
+        h1 {
+            text-align: center;         
+            color: #000000;
+        }
+       form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+      
+    </style>
+</head>
+<body>
+    <h1>ᴘʀᴏᴅᴜᴄᴛ ʀᴇᴠɪᴇᴡ</h1>
+    <form>
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required><br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="producto">Nombre del Producto:</label>
+        <input type="text" id="producto" name="producto" required><br><br>
+
+        <label for="punto-de-compra">Punto de compra:</label>
+
+        <input type="radio" id="punto-de-compra-daule" name="punto-de-compra" value="Daule" required>
+        <label for="punto-de-compra-daule">Daule</label>
+
+        <input type="radio" id="punto-de-compra-guayaquil" name="punto-de-compra" value="Guayaquil">
+        <label for="punto-de-compra-guayaquil">Guayaquil</label>
+
+        <input type="radio" id="punto-de-compra-manabi" name="punto-de-compra" value="Manabi">
+        <label for "punto-de-compra-manabi">Manabi</label>
+
+        <input type="radio" id="punto-de-compra-machala" name="punto-de-compra" value="Machala">
+        <label for="punto-de-compra-machala">Machala</label>
+
+        <input type="radio" id="punto-de-compra-el-oro" name="punto-de-compra" value="El Oro">
+        <label for="punto-de-compra-el-oro">El Oro</label><br><br>
+
+        <label for="puntuacion">Puntuación:</label>
+        <select id="puntuacion" name="puntuacion">
+            <option value="5">5 (Excelente)</option>
+            <option value="4">4 (Muy Bueno)</option>
+            <option value="3">3 (Bueno)</option>
+            <option value="2">2 (Regular)</option>
+            <option value="1">1 (Malo)</option>
+        </select><br><br>
+
+        <label for="resena">Product Review:</label><br>
+        <textarea id="resena" name="resena" rows="4" required></textarea><br><br>
+
+        <button type="submit">Send Review</button>
+    </form>
+</body>
+</html>
